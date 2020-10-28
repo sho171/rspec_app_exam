@@ -7,7 +7,7 @@ FactoryBot.define do
     deadline { Random.rand(from..to) }
 
     trait :done do
-      status { "done" }
+      status { :done }
       completion_date { Time.current.yesterday }
     end
   end
